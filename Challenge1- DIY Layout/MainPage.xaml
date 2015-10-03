@@ -10,30 +10,30 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-        
+
         <TextBlock Grid.Row="0" 
                    FontSize="48" 
-                   Grid.ColumnSpan="2"
+                   Grid.ColumnSpan="3"
                    Width="Auto"
                    Margin="0,0,271,0">ACME Sales Corp</TextBlock>
         <TextBlock Grid.Row="1" 
                    VerticalAlignment="Center"
                    HorizontalAlignment="Left"
                    Margin="10,0,0,0">Firstname</TextBlock>
-        <TextBox Grid.Row="1" Grid.Column="1"
-                 HorizontalAlignment="Left" 
-                 Margin="10,10,10,10"
-                 Width="482"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" 
+                 Margin="10,10,106,10"
+                 />
 
         <TextBlock Grid.Row="2" 
                    VerticalAlignment="Center"
@@ -42,7 +42,7 @@
         <TextBox Grid.Row="2" Grid.Column="1"
                  HorizontalAlignment="Left" 
                  Margin="10,10,10,10"
-                 Width="482"></TextBox>
+                 ></TextBox>
 
         <TextBlock Grid.Row="3" 
                    VerticalAlignment="Center"
@@ -51,7 +51,7 @@
         <TextBox Grid.Row="3" Grid.Column="1"
                  HorizontalAlignment="Left" 
                  Margin="10,10,10,10"
-                 Width="482"></TextBox>
+                ></TextBox>
 
         <Button Grid.Row="4" Grid.Column="1"
                 HorizontalAlignment="Left"
